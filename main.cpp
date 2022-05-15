@@ -1,5 +1,4 @@
 #include <iostream>
-#include <locale.h>
 
 using namespace std;
 
@@ -8,18 +7,19 @@ string ent;
 
 void bnr()
 {
-cout << "Программа шифрует строки по алгоритму Цезаря" << endl;
-cout << "1)Зашифровать " << "\n" << "2)Расшифровать" << "\n" ">>> " << endl;
+cout << "Cesar Crypt/Uncrypt" << endl;
+cout << "1)Crypt " << "\n" << "2)Uncrypt" << "\n" ">>> " << endl;
 cin >> chs;
 }
 
+//Racshifrovka
 void cesuncrt()
 {
 	int sht_two;
 	string ent_two;
-	cout << "Ведите зашифрованную строку: ";
+	cout << "Enter a crypt string: ";
 	cin >> ent_two;
-	cout << "Введите ключ(сдвиг): ";
+	cout << "Enter a key(shift): ";
 	cin >> sht_two;
 	for(i_two=0;i_two<ent_two.length();i_two++)
 	{
@@ -30,11 +30,12 @@ void cesuncrt()
 	
 }
 
+//Crypt
 void cescrt()
 {
-	cout << "Введите строку: ";
+	cout << "Enter a string: ";
 	cin >> ent;
-	cout << "Введите сдвиг: ";
+	cout << "Enter a shift: ";
 	cin >> sht;
 	for(i=0; i<ent.length(); i++)
 	{
